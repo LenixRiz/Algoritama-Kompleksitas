@@ -20,7 +20,7 @@ public class KonversiNilai {
             Scanner keyboard = new Scanner (System.in);
         
             int nilai;
-            String nim, nama, matkul, prodi, jurusan, predikat;
+            String nim, nama, matkul, prodi, jurusan, predikat, ucapan;
 
             System.out.println("Masukkan Data");
             System.out.println("=============");
@@ -94,6 +94,40 @@ public class KonversiNilai {
                 predikat = "E";
             }
 
+            //mengelola ucapan
+            switch (predikat) {
+                case "A" :
+                    ucapan = "Sangat Memuaskan";
+                break;
+                case "A-" :
+                    ucapan = "Sangat Memuaskan";
+                break;
+                case "B+" :
+                    ucapan = "Memuaskan";
+                break;
+                case "B" :
+                    ucapan = "Memuaskan";
+                break;
+                case "B-" :
+                    ucapan = "Memuaskan";
+                break;
+                case "C+" :
+                    ucapan = "Cukup";
+                break;
+                case "C" :
+                    ucapan = "Cukup";
+                break;
+                case "C-" :
+                    ucapan = "Cukup";
+                break;
+                case "D" :
+                    ucapan = "Kurang";
+                break;
+                case "E" :
+                    ucapan = "Sangat Kurang";
+                break;
+            }
+            
             //output
             System.out.println("====Hasil Pengelolahan Data====");
             System.out.println("NIM : " + nim);
@@ -102,6 +136,7 @@ public class KonversiNilai {
             System.out.println("Mata Kuliah : " + matkul);
             System.out.println("Nilai : " + nilai);
             System.out.println("Predikat Nilai : " + predikat);
+            System.out.println(ucapan);
 
             System.out.println("");
             System.out.println("");
